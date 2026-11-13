@@ -1,0 +1,17 @@
+
+import time
+
+def fall_detection(acceleration):
+    threshold = 25
+
+    if acceleration > threshold:
+        print("⚠️ 낙상 의심 상황 감지!")
+        print("보호자에게 확인이 필요합니다.")
+    else:
+        print("정상 상태입니다.")
+
+while True:
+    sensor_value = float(input("가속도 센서 값 입력: "))
+    fall_detection(sensor_value)
+
+    time.sleep(1)
