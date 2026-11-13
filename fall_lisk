@@ -1,0 +1,24 @@
+
+def fall_risk(age, dizziness, walking_difficulty, past_fall):
+    score = 0
+
+    if age >= 65:
+        score += 2
+    if dizziness:
+        score += 2
+    if walking_difficulty:
+        score += 3
+    if past_fall:
+        score += 3
+
+    if score >= 6:
+        result = "낙상 고위험군"
+    elif score >= 3:
+        result = "낙상 중위험군"
+    else:
+        result = "낙상 저위험군"
+
+    print("낙상 위험 점수:", score)
+    print("평가 결과:", result)
+
+fall_risk(75, True, True, False)
