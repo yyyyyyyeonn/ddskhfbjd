@@ -1,0 +1,16 @@
+
+import time
+
+def fall_prevention():
+    print("낙상 예방 프로그램 시작!")
+
+    while True:
+        print("\n[낙상 예방 알림]")
+        print("1. 천천히 일어나세요.")
+        print("2. 이동 시 보행 보조기구를 사용하세요.")
+        print("3. 바닥의 장애물을 확인하세요.")
+        print("4. 어지러우면 즉시 앉거나 도움을 요청하세요.")
+
+        time.sleep(1800)  # 30분마다 알림
+
+fall_prevention()
